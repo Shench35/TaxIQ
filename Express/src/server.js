@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import authRoutes from "./routes/auth.routes.js";
+import keysRoutes from "./routes/keys.routes.js";
+import orgRoutes from "./routes/org.routes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { requestLogger } from "./middleware/requestLogger.js";
 
@@ -21,6 +23,8 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/keys", keysRoutes);
+app.use("/api/org", orgRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ success: false, error: "Route not found" });

@@ -1,1 +1,40 @@
-{"users":[]}
+{
+  "users": [
+    {
+      "id": "dd82f761-596f-4a17-bdf8-4d4abb9e4236",
+      "email": "org@example.com",
+      "passwordHash": "$2b$12$xfzVkz41QK5.02Me66ZfuuLFrQX7QHFe2IYZVaPrmD/EL/k268t7S",
+      "orgName": "Test Org",
+      "orgAddress": "1 Main St",
+      "phoneNumber": "08011112222",
+      "createdAt": "2026-06-02T23:30:08.414Z",
+      "updatedAt": "2026-06-02T23:30:08.414Z"
+    },
+    {
+      "id": "5273314f-5d5a-436a-b6a9-5cc09c37674d",
+      "email": "acme@example.com",
+      "passwordHash": "$2b$12$WXQxjRCdT3qJwcNANNJevuCq/YkLgV343hJWUeKxyd5sqLxFtS02m",
+      "orgName": "Acme Worldwide",
+      "orgAddress": "42 Galaxy Way",
+      "phoneNumber": "+2348019999999",
+      "createdAt": "2026-06-02T23:42:39.530Z",
+      "updatedAt": "2026-06-03T00:42:59.955Z",
+      "apiKeys": [
+        {
+          "id": "89cf77b9-69b1-4c6e-802c-35962739211e",
+          "keyHash": "d8973a4dcfc8c66bdc2f58821dafbc5a706601954005985d22a8c19b2de1a01c",
+          "keyLast4": "504c",
+          "createdAt": "2026-06-03T00:42:47.129Z",
+          "revokedAt": null
+        },
+        {
+          "id": "959370ba-5a9f-4db8-b848-da068eb3da35",
+          "keyHash": "246967d60134335de3beccda876a41104429b997a81dbe812a7f523071cdeac7",
+          "keyLast4": "e3f8",
+          "createdAt": "2026-06-03T00:42:59.782Z",
+          "revokedAt": "2026-06-03T00:42:59.955Z"
+        }
+      ]
+    }
+  ]
+}

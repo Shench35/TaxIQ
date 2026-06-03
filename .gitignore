@@ -76,3 +76,6 @@ out/
 
 # Next.js / Gatsby / Vue specific (if applicable in your Node environment)
 .cache/
+
+project_guide.pdf
+Agent.md
