@@ -1,5 +1,5 @@
-// Auth controller for organization registration and login.
-// Registration accepts organization fields and returns a JWT + public org object.
+// Authentication controller: handles organization `register` and `login` flows.
+// Returns JWT tokens and public organization objects on success.
 import { loginOrg, registerOrg } from "../services/auth.service.js";
 import { recordFailedLogin, recordSuccessfulLogin } from "../middleware/rateLimiter.js";
 

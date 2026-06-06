@@ -1,3 +1,4 @@
+// API keys controller: list, create and revoke API keys for the authenticated organization.
 import { createApiKey, listApiKeys, revokeApiKey } from '../services/keys.service.js';
 
 export async function getKeys(req, res, next) {

@@ -1,3 +1,4 @@
+// API keys service: manage per-organization API keys stored inside the org record in `users.json`.
 import crypto from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';

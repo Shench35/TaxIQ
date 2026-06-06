@@ -1,4 +1,4 @@
-// Controller for organization profile endpoints
+// Organization controller: provides profile retrieval and update endpoints.
 import { getOrgById, updateOrgProfile } from '../services/auth.service.js';
 
 function toPublicProfile(org) {

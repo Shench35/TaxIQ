@@ -1,11 +1,14 @@
-// Express backend server entrypoint for the TaxIQ auth API.
+// Server entrypoint: configures Express, middleware, and mounts routes.
+// Starts the HTTP listener using environment `PORT`.
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
 import authRoutes from "./routes/auth.routes.js";
+import creditRoutes from "./routes/credit.routes.js";
 import keysRoutes from "./routes/keys.routes.js";
 import orgRoutes from "./routes/org.routes.js";
+import verificationsRoutes from "./routes/verifications.routes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { requestLogger } from "./middleware/requestLogger.js";
 
@@ -23,8 +26,10 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/credit", creditRoutes);
 app.use("/api/keys", keysRoutes);
 app.use("/api/org", orgRoutes);
+app.use("/api/verifications", verificationsRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ success: false, error: "Route not found" });
